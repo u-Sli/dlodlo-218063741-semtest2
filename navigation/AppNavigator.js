@@ -10,10 +10,10 @@ const Stack = createStackNavigator();
 export default function AppNavigator(){
     return (
        <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Registration" component={Registration} />
         <Stack.Screen name="Product" component={Product} />
         <Stack.Screen name="ProductDetail" component={ProductDetail} />
-        <Stack.Screen name="Registration" component={Registration} />
-        <Stack.Screen name="Login" component={Login} />
        </Stack.Navigator>
     );
 }

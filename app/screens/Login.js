@@ -26,7 +26,7 @@ export default function Login({ navigation }) {
         try {
             await loginUser(email, password);
             Alert.alert("Welcome Back!", "You have successfully logged in.");
-            // REMOVE the navigation.navigate line - the RootNavigator will handle this automatically
+            navigation.navigate("Product"); // Add back manual navigation
         } catch (error) {
             Alert.alert("Login Error", error.message);
         }

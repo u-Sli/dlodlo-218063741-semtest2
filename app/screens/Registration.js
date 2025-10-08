@@ -27,7 +27,7 @@ export default function Registration({ navigation }) {
       await registerUser(email, password);
       await verifyEmail();
       Alert.alert("Account Created", "You have been successfully registered!");
-      
+      navigation.navigate("Product"); // Add back manual navigation
     } catch (error) {
       Alert.alert("Registration Error", error.message);
     }
